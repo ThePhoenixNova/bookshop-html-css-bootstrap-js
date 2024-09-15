@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Bookshop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Top bar -->
+    <div class="bg-dark text-light py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <i class="fas fa-phone"></i> +855 (70) 205 673
+                    <i class="fas fa-envelope ms-3"></i> info@ourbookshop.com
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="text-light me-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="assets/logo/bookshop-logo.avif" alt="Our Bookshop Logo" height="60">
+                BookShop
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search books..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <a href="cart.html" class="btn btn-outline-primary ms-2">
+                    <i class="fas fa-shopping-cart"></i> Cart
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero slider -->
+    <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/slides/newArrivalBooks.jpg" class="d-block w-100" alt="New Arrivals">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>New Arrivals</h2>
+                    <p>Check out our latest collection of books!</p>
+                    <a href="catalog.html" class="btn btn-primary">Shop Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/slides/bestSellerBooks.jpg" alt="Best Sellers">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Best Sellers</h2>
+                    <p>Discover our most popular titles!</p>
+                    <a href="catalog.html" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/slides/specialOfferBooks.jpg" class="d-block w-100" alt="Special Offers">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Special Offers</h2>
+                    <p>Limited time discounts on selected books!</p>
+                    <a href="catalog.html" class="btn btn-primary">View Offers</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <main class="container mt-5">
+        <!-- Featured Categories -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Featured Categories</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="assets/images/fictionBooks.jpg" class="card-img-top" alt="Fiction">
+                        <div class="card-body">
+                            <h5 class="card-title">Fiction</h5>
+                            <a href="catalog.html" class="btn btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="assets/images/nonFictionBooks.jpg" class="card-img-top" alt="Non-Fiction">
+                        <div class="card-body">
+                            <h5 class="card-title">Non-Fiction</h5>
+                            <a href="catalog.html" class="btn btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="assets/images/childrentBooks.jpg" class="card-img-top" alt="Children's Books">
+                        <div class="card-body">
+                            <h5 class="card-title">Children's Books</h5>
+                            <a href="catalog.html" class="btn btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Products -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Popular Books</h2>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="assets/images/popular1.jpg" class="card-img-top" alt="Book 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Book Title 1</h5>
+                            <p class="card-text">Author: John Doe</p>
+                            <p class="card-text">$19.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="assets/images/popular1.jpg" class="card-img-top" alt="Book 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Book Title 1</h5>
+                            <p class="card-text">Author: John Doe</p>
+                            <p class="card-text">$19.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="assets/images/popular1.jpg" class="card-img-top" alt="Book 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Book Title 1</h5>
+                            <p class="card-text">Author: John Doe</p>
+                            <p class="card-text">$19.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="assets/images/popular1.jpg" class="card-img-top" alt="Book 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Book Title 1</h5>
+                            <p class="card-text">Author: John Doe</p>
+                            <p class="card-text">$19.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more book cards here -->
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Latest News</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="assets/images/latestNew1.jpg" class="card-img-top" alt="News 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Author Signing Event</h5>
+                            <p class="card-text">Join us for a book signing with bestselling author Jane Smith on June 15th.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="assets/images/latestNew1.jpg" class="card-img-top" alt="News 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Author Signing Event</h5>
+                            <p class="card-text">Join us for a book signing with bestselling author Jane Smith on June 15th.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="assets/images/latestNew1.jpg" class="card-img-top" alt="News 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Author Signing Event</h5>
+                            <p class="card-text">Join us for a book signing with bestselling author Jane Smith on June 15th.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more news cards here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Newsletter Signup -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Subscribe to Our Newsletter</h2>
+            <form class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <p>Our Bookshop is your one-stop destination for all your reading needs.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Home</a></li>
+                        <li><a href="catalog.html" class="text-light">Catalog</a></li>
+                        <li><a href="about.html" class="text-light">About</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        123 Book Street<br>
+                        Reading City, RC 12345<br>
+                        <i class="fas fa-phone"></i> +1 (123) 456-7890<br>
+                        <i class="fas fa-envelope"></i> info@ourbookshop.com
+                    </address>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-light me-2"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="text-light me-2"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2024 Our Bookshop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
