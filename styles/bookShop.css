@@ -37,6 +37,12 @@ a:hover {
 .bg-dark a:hover {
     color: #f8f9fa;
 }
+/* Nav Bar */
+.logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
 
 /* Hero Slider Styles */
 .carousel-item {
@@ -200,3 +206,4 @@ address {
     object-fit: cover;
     height: 200px; /* Adjust height as needed */
 }
+
