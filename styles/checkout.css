@@ -10,9 +10,6 @@
     border-radius: 50%;
 }
 
-.fonst-style{
-    font-size: 16px;
-}
-.fonst-style:hover{
+.font-style:hover{
     text-decoration: underline;
 }

@@ -1,5 +1,6 @@
-import { featureCategories, latestNews, popularProduct } from "../data/home.js";
+import { featureCategories, latestNews } from "../data/home.js";
 import { formatCurrency } from "./utils/money.js";
+import { popularProduct } from "../data/products.js";
 
 let featureCatHtml = '';
 featureCategories.forEach((feature) => {

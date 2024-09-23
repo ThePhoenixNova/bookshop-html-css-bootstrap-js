@@ -1,6 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
 }
 
 .navbar {
@@ -13,6 +25,13 @@ body {
 
 .nav-link {
     font-size: 1.2rem;
+}
+
+.font-size{
+    font-size: 16px;
+}
+.font-size:hover{
+    text-decoration: underline;
 }
 
 main {
